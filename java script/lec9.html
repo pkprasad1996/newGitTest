@@ -1,0 +1,28 @@
+<html>
+<head>
+	<script>
+		function f1()
+		{
+		var x= document.getElementById("p1");
+		x.style.color="red";
+		x.style.fontSize="50px";
+		x.innerHTML="this is changed text";
+		}
+		function f2()
+		{
+		var x= document.getElementById("p1");
+		x.style.color="black";
+		x.style.fontSize="40px";
+		}
+	</script>
+	
+</head>
+
+<body>
+	<h1>this is h1</h1>
+	<p id="p1" onmouseleave="f2()" onmouseenter="f1()"> this is p1</p>
+	<p> this is p </p>
+	<button onclick="f1()">f1</button>
+</body>
+
+</html>
